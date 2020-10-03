@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Drexel Plan of Study</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body id="body">
+	<section class="cover-main" id="home">
+		<header>
+			<nav class="nav-wrapper">
+				<div class="logo">	
+					<a href="index.html">
+						<img src="images/drexel-logo.png" class="logo">
+					</a>		
+				</div>
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact Us!</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="wrapper">
+            <ul id="scene">
+                <li class="layer name">Welcome to the</li>
+                <li class="layer title">Drexel Plan of Study!</li>
+                <li class="layer btn1">
+                    <a href="c-schedule.html" class="es-schedule">Create Schedule</a>
+                </li>
+                <li class="layer btn2">
+                    <a href="view-schedule.html" class="view-schedule">View My Schedule</a>
+                </li>
+                <li class="layer btn3">
+                    <a href="major.html" class="view-classes">View Classes</a>
+                </li>
+            </ul>
+        </div>
+		
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="scripts/parallax.min.js"></script>
+	<script src=scripts/main.js></script>
+
+	<script>
+		
+		var scene = document.getElementById("scene");
+		var parallax = new Parallax(scene);
+
+	</script>
+
+</body>
+	
+</html>

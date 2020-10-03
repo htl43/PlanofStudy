@@ -1,0 +1,655 @@
+/*RESET CSS BEGIN*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+/*RESET CSS END*/
+
+
+/*HELPER CLASS BEGIN*/
+
+img {
+  max-width: 100%;
+}
+
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 20px 0;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
+
+/*HELPER CLASS END*/
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 0;
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  animation: fadeIn 2s ease;
+}
+
+/* NAVIGATION BAR + HEADER STYLE STARTS */
+
+header {
+  background: transparent;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+}
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+  transform: translateY(-200%);
+  transition: 0.5s;
+}
+
+body.scroll header.sticky {
+  transform: translateY(0%);
+
+}
+
+.nav-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  padding: 7px 0;
+
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+
+nav ul li a {
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+
+  border-bottom: 1px solid transparent;
+  padding: 3px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+
+header .logo img{
+  max-width: 50px;
+}
+
+@keyframes fadeIn{
+  from{opacity: 0.0;}
+  to{opacity: 1.0;}
+}
+
+
+/* PARALLAX PAGE STYLES START */
+
+.cover-main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/dragon-rec-center.jpg) right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+}
+
+/* ABOUT START */
+
+.about {
+  animation: fadeIn 2s ease;
+  margin: -65px auto;
+}
+
+ul#scene li.aboutheading {
+  position: relative;
+  display: : block;
+  margin: 60px auto;
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+ul#scene li.aboutheading::after {
+  display: block;
+  height: 2px;
+  background: white;
+  content: "";
+  width: 100px;
+  margin: 50px auto 0 auto;
+}
+
+.aboutwording {
+  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+  color: white;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 20px 60px;
+  border: 1px solid white;
+  background: transparent;
+  text-decoration: none;
+}
+
+/* ABOUT END */
+
+ul#scene li.name {
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+ul#scene li.title {
+  text-align: center;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  margin-top: 25px;
+}
+
+ul#scene {
+  vertical-align: middle;
+}
+
+.btn1 {
+  width: 100%;
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.btn2 {
+  width: 100%;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.btn3 {
+  width: 100%;
+  margin-top: 220px;
+  text-align: center;
+}
+
+.es-schedule,
+.view-schedule,
+.view-classes {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  text-decoration: none;
+}
+
+.es-schedule:hover,
+.view-schedule:hover,
+.view-classes:hover {
+  background: white;
+  color: black;
+  transition: 0.5s;
+}
+
+.es-schedule {
+  margin-right: 25px;
+}
+
+.view-schedule {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.view-classes {
+  margin-left: 25px;
+}
+
+/* PARALLAX PAGE STYLES END */
+
+
+
+/* VIEW SCHEDULE START */
+
+
+
+a {
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* ------------------------------------ */
+input {
+  display: block;
+  outline: none;
+  border: none !important;
+}
+
+textarea {
+  display: block;
+  outline: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+/* ------------------------------------ */
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+iframe {
+  border: none !important;
+}
+
+
+/*[ Table ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-table100 {
+  width: 100%; 
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  animation: fadeIn 2s ease;
+  z-index: 4;
+}
+
+.wrap-table100 {
+  width: 93%;
+}
+
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  position: relative;
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: #36304a;
+}
+table tbody tr {
+  height: 50px;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: left;
+}
+table td.c, table th.c {
+  text-align: left;
+}
+table td.r, table th.r {
+  text-align: left;
+}
+
+
+.table100-head th{
+  font-family: "Montserrat", sans-serif;;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #808080;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.column1 {
+  width: 130px;
+  padding-left: 40px;
+}
+
+.column2 {
+  width: 110px;
+
+}
+
+.column3 {
+  width: 90px;
+}
+
+.column4 {
+  width: 100px;
+  text-align: left;
+}
+
+.column5 {
+  width: 170px;
+  text-align: left;
+}
+
+.column6 {
+  width: 222px;
+  text-align: right;
+  padding-right: 62px;
+}
+
+.column7 {
+  width: 170px;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 992px) {
+  table {
+    display: block;
+  }
+  table > *, table tr, table td, table th {
+    display: block;
+  }
+  table thead {
+    display: none;
+  }
+  table tbody tr {
+    height: auto;
+    padding: 37px 0;
+  }
+  table tbody tr td {
+    padding-left: 40% !important;
+    margin-bottom: 10px;
+  }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+  }
+  table tbody tr td:before {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #999999;
+    line-height: 1.2;
+    font-weight: unset;
+    position: absolute;
+    width: 40%;
+    left: 30px;
+    top: 0;
+  }
+  table tbody tr td:nth-child(1):before {
+    content: "Course No.";
+  }
+  table tbody tr td:nth-child(2):before {
+    content: "Instr Type";
+  }
+  table tbody tr td:nth-child(3):before {
+    content: "Section";
+  } 
+  table tbody tr td:nth-child(4):before {
+    content: "CRN";
+  }
+  table tbody tr td:nth-child(5):before {
+    content: "Title";
+  }
+  table tbody tr td:nth-child(6):before {
+    content: "Day/Time";
+  }
+  table tbody tr td:nth-child(6):before {
+    content: "Instructor";
+  }
+
+  .column4,
+  .column5,
+  .column6 {
+    text-align: left;
+  }
+
+  .column4,
+  .column5,
+  .column6,
+  .column1,
+  .column2,
+  .column3 {
+    width: 100%;
+  }
+
+  tbody tr {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
